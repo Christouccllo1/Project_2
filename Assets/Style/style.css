@@ -10,6 +10,7 @@ body{
     font-family: 'Ubuntu', sans-serif;
     width: 100vw;
     height: 100vh;
+    background-color: black;
 }
 
 header{
@@ -28,6 +29,7 @@ nav a{
 
 main{
     height: 80vh;
+    margin: 0 10%;
     
 }
 footer{
@@ -39,3 +41,52 @@ footer{
     justify-content: center;
     font-size: 32px;
 }
+.search-section{
+    
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-section div input{
+    background-color: black;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid aquamarine;
+    margin: 2vw;
+    width: 60vw;
+    color: aquamarine;
+    font-size: 32px;
+    padding: 1vw;
+
+}
+.search-section div{
+    
+    display: flex;
+    align-items: baseline;
+}
+.search-section button{
+    background-color: aqua;
+    padding: 2vw 3vw;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+
+}
+.result-section{
+    background-color: blue;
+    height: 70%;
+}
+
+header button{
+    background-color: aquamarine;
+    border: none;
+}
+@media only screen and (max-width:576px) {
+    body{
+        background-color: blue;
+        
+    }
+    
+}
+
