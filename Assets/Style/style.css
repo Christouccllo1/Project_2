@@ -21,6 +21,10 @@ header{
     align-items: center;
     height: 10vh;
 }
+header button, .popup{
+    display: none;
+
+}
 nav a{
     text-decoration: none;
     color: black;
@@ -84,9 +88,37 @@ header button{
 }
 @media only screen and (max-width:576px) {
     body{
-        background-color: blue;
+        
         
     }
-    
+   header button{
+    display: block;
+   } 
+   .popup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    position: absolute;
+    background-color: aliceblue;
+    height: 80vh;
+   }
+   .popup a{
+    margin: 4vw;
+    font-size: 5vw;
+    text-decoration: none;
+    background-color: black;
+    padding: 2vw 2vw;
+    width: 50vw;
+    text-align: center;
+    color: aquamarine;
+    border-radius: 5px;
+
+   }
+   header nav{
+    display: none;
+   }
 }
+
 
