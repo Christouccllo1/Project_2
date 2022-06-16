@@ -95,13 +95,13 @@ header button{
     display: block;
    } 
    .popup{
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100vw;
     position: absolute;
-    background-color: aliceblue;
+    background-color: aqua;
     height: 80vh;
    }
    .popup a{
