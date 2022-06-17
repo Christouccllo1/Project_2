@@ -21,3 +21,10 @@ searchType.addEventListener("change", (e)=>{
     console.log(q)
     
 } )
+
+let count=""
+limit.addEventListener("change", (e)=>{
+    e.preventDefault()
+    count=e.target.value
+    
+})
