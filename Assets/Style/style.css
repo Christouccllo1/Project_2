@@ -15,11 +15,12 @@ body{
 
 header{
     background-color: aquamarine;
-    padding: 1vw;
+    padding: 3vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 10vh;
+
 }
 header button, .popup{
     display: none;
@@ -52,7 +53,7 @@ footer{
     justify-content: center;
     align-items: center;
 }
-.search-section div input{
+.search-section div input[type="text"] {
     background-color: black;
     outline: none;
     border: none;
@@ -62,6 +63,16 @@ footer{
     color: aquamarine;
     font-size: 32px;
     padding: 1vw;
+
+}
+.search-section div input[type="number"] {
+    width: 12%;
+    margin: 2vw;
+    padding: 1vw 3vw;
+    font-size: 2vw;
+    background-color: aqua;
+    border: none;
+    border-radius: 5px;
 
 }
 .search-section div{
@@ -86,7 +97,7 @@ header button{
     background-color: aquamarine;
     border: none;
 }
-@media only screen and (max-width:576px) {
+@media only screen and (max-width:380px) {
     body{
         
         
