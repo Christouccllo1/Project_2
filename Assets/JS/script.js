@@ -26,5 +26,13 @@ let count=""
 limit.addEventListener("change", (e)=>{
     e.preventDefault()
     count=e.target.value
-    
+    console.log(count)
 })
+
+searchBtn.addEventListener("click",()=> {
+    fetch(`https://api.giphy.com/v1/gifs/search?api_key=B9tdgq86zaGpP2sZ78MxJ24FCvZPaKtd&q=${q}&limit=${count}&offset=0&rating=g&lang=en`)
+    .then(response=>response.json()
+    .then(response=>console.log(response))
+    )
+})
+
