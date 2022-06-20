@@ -35,6 +35,7 @@ nav a{
 main{
     height: 80vh;
     margin: 0 10%;
+    box-sizing: border-box;
     
 }
 footer{
@@ -52,6 +53,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .search-section div input[type="text"] {
     background-color: black;
@@ -59,20 +61,20 @@ footer{
     border: none;
     border-bottom: 2px solid aquamarine;
     margin: 2vw;
-    width: 60vw;
+    width: 45vw;
     color: aquamarine;
     font-size: 32px;
     padding: 1vw;
 
 }
 .search-section div input[type="number"] {
-    width: 12%;
-    margin: 2vw;
-    padding: 1vw 3vw;
+    width: 10vw;
+    padding: 2vw 3vw;
     font-size: 2vw;
     background-color: aqua;
     border: none;
     border-radius: 5px;
+    margin: 2vw;
 
 }
 .search-section div{
@@ -81,16 +83,37 @@ footer{
     align-items: baseline;
 }
 .search-section button{
+    font-size: 2vw;
+    width: 10vw;
     background-color: aqua;
-    padding: 2vw 3vw;
+    padding: 2vw 2vw;
     border-radius: 5px;
     outline: none;
     border: none;
 
 }
-.result-section{
-    background-color: blue;
+
+.results{
     height: 70%;
+    display: flex;
+    
+}
+.result-section{
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    align-content: space-around;
+    align-self: flex-end;
+
+}
+
+.result-section img{
+    width: 300px;
+    height: 200px;
+    margin: 4vw;
 }
 
 header button{
@@ -132,4 +155,17 @@ header button{
    }
 }
 
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgba(90, 90, 90, 0.253);
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+  }
 
