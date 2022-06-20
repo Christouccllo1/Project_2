@@ -16,8 +16,6 @@ let q = ""
 searchType.addEventListener("change", (e)=>{
     e.preventDefault()
     q=e.target.value
-    console.log(q)
-    
 } )
 
 let count=""
@@ -29,6 +27,7 @@ limit.addEventListener("change", (e)=>{
 })
 
 searchBtn.addEventListener("click",()=> {
+    resultSection.innerHTML=""
     fetch(`https://api.giphy.com/v1/gifs/search?api_key=B9tdgq86zaGpP2sZ78MxJ24FCvZPaKtd&q=${q}&limit=${count}&offset=0&rating=g&lang=en`)
     .then(response=>response.json()
     .then(response=>{
