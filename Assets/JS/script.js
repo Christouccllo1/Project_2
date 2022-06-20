@@ -8,8 +8,6 @@ hambtn.addEventListener("click", ()=>{
     }
 })
 
-
-
 let searchType=document.querySelector("#search-type")
 let limit=document.querySelector("#count")
 let searchBtn=document.querySelector(".search-section button")
@@ -38,7 +36,7 @@ searchBtn.addEventListener("click",()=> {
         resultArray.forEach(element => {
             console.log(element)
             let img=document.createElement("img")
-            img.src=element.images["looping"].mp4
+            img.src=element.images["original"].webp
             resultSection.appendChild(img)
         });
     })
