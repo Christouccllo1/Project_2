@@ -31,6 +31,7 @@ searchBtn.addEventListener("click",()=> {
     fetch(`https://api.giphy.com/v1/gifs/search?api_key=B9tdgq86zaGpP2sZ78MxJ24FCvZPaKtd&q=${q}&limit=${count}&offset=0&rating=g&lang=en`)
     .then(response=>response.json()
     .then(response=>{
+        console.log(response)
         resultArray=response.data
         resultArray.forEach(element => {
             console.log(element)
